@@ -38,7 +38,7 @@ BookController: Консольный интерфейс для книг
 
 UserController: Консольный интерфейс для пользователей
 
-4. Особенности реализации:
+2. Особенности реализации:
 
 Принципы SOLID:
 
@@ -62,7 +62,7 @@ Dependency Inversion:
 
 Зависимости передаются через конструкторы (BookServiceImpl(BookRepository))
 
-5. Работа с БД:
+3. Работа с БД:
 
 Используется JDBC + SQLite
 
@@ -72,7 +72,7 @@ Dependency Inversion:
 
 Репозитории бросают кастомные исключения (BookNotFoundException)
 
-6. Примеры сценариев:
+4. Примеры сценариев:
 
 Добавление книги с проверкой уникальности ISBN
 
@@ -82,7 +82,7 @@ Dependency Inversion:
 
 Управление пользователями
 
-7. Запуск:
+5. Запуск:
 
 Инициализация БД (LibraryDatabase)
 
@@ -94,7 +94,7 @@ BookService bookService = new BookServiceImpl(bookRepo);
 BookController bookController = new BookController(bookService);
 Запуск главного меню
 
-8. Дальнейшее развитие:
+6. Дальнейшее развитие:
 
 Добавление авторизации
 
